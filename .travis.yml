@@ -1,7 +1,8 @@
 language: erlang
-notifications:
-  email: you@example.org
+sudo: false
 otp_release:
-  - R14B03
-  - R14B02
-  - R14B01
+  - 17.0
+  - 17.1
+  - 17.3
+
+script: "make test"
